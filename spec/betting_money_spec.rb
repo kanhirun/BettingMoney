@@ -14,14 +14,14 @@ describe BettingMoney do
         expect(earnings).to eql(3_400)
       end
 
-      xit "should return 49,000 as the amount of cents earned" do
+      it "should return 49,000 as the amount of cents earned" do
         earnings = bettingMoney.moneyMade([200, 300, 100],
                                            [10, 10, 10],
                                            2)
         expect(earnings).to eql(49_000)
       end
 
-      xit "should return 29,500 as the amount of cents earned" do
+      it "should return 29,500 as the amount of cents earned" do
         earnings = bettingMoney.moneyMade([100, 100, 100, 100],
                                            [5, 5, 5, 5],
                                            0)
@@ -30,7 +30,7 @@ describe BettingMoney do
     end
 
     describe "The company doesn't gain anything" do
-      xit "should return 0 as the amount of cents earned" do
+      it "should return 0 as the amount of cents earned" do
         earnings = bettingMoney.moneyMade([5000, 5000],
                                            [100, 2],
                                            0)
@@ -39,7 +39,7 @@ describe BettingMoney do
     end
 
     describe "The company loses money" do
-      xit "should return -1000 as the amount of cents loss" do
+      it "should return -1000 as the amount of cents loss" do
         losses = bettingMoney.moneyMade([100],
                                          [10],
                                          0)
