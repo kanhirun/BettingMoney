@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 
-describe BettingMoney do
-  let(:bettingMoney) { BettingMoney.new }
+describe BettingMoney::Model do
+  let(:bettingMoney) { BettingMoney::Model.new }
 
 
   describe "#moneyMade" do
