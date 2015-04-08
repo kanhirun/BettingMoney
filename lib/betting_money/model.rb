@@ -2,8 +2,8 @@ module BettingMoney
   class Model
 
     # -- Formal Parameters --
-    # amounts:int[]         The total bets (in $) placed on a victory margin
-    # centsPerDollar:int[]  The betting reward (in cents/$) on a victory margin
+    # amounts:int[]         The total bets (in $) placed on all victory margins
+    # centsPerDollar:int[]  The betting rewards (in cents/$) on all victory margins
     # finalResult:int       The victory margin that has won on a given day
 
     # Returns the net profit in cents based on the final result of a given day 
