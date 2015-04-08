@@ -6,7 +6,7 @@ describe BettingMoney do
 
 
   describe "#moneyMade" do
-    context "The company gains money" do
+    describe "The company gains money" do
       it "should return 3,400 as the amount of cents earned" do
         earnings = bettingMoney.moneyMade([10, 20, 30],
                                           [20, 30, 40],
@@ -29,7 +29,7 @@ describe BettingMoney do
       end
     end
 
-    context "The company doesn't gain anything" do
+    describe "The company doesn't gain anything" do
       xit "should return 0 as the amount of cents earned" do
         earnings = bettingMoney.moneyMade([5000, 5000],
                                            [100, 2],
@@ -38,7 +38,7 @@ describe BettingMoney do
       end
     end
 
-    context "The company loses money" do
+    describe "The company loses money" do
       xit "should return -1000 as the amount of cents loss" do
         losses = bettingMoney.moneyMade([100],
                                          [10],
