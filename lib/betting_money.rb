@@ -5,4 +5,3 @@ require_relative 'betting_money/validations'
 
 module BettingMoney
 end
-
