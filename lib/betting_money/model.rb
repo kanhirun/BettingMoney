@@ -10,7 +10,7 @@ module BettingMoney
     def moneyMade(amounts, centsPerDollar, finalResult)
       revenue    = calculateRevenue(amounts, finalResult)
       expenses   = calculateExpense(amounts, centsPerDollar, finalResult)
-      money_made = (convert_to_cents(revenue) - expenses)
+      money_made = (convertToCents(revenue) - expenses)
 
       return money_made 
     end
@@ -36,7 +36,7 @@ module BettingMoney
     end
 
     private
-      def convert_to_cents(dollars)
+      def convertToCents(dollars)
         return dollars * 100  # there is 100:1 cents to dollars
       end
   end
