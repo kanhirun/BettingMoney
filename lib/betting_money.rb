@@ -7,7 +7,11 @@ class BettingMoney
 
   # Returns the net profit in cents based on the final result of a given day 
   def moneyMade(amounts, centsPerDollar, finalResult)
-    3_400
+    revenue    = calculateRevenue(amounts, finalResult)
+    expenses   = calculateExpense(amounts, centsPerDollar, finalResult)
+    money_made = (convert_to_cents(revenue) - expenses)
+
+    return money_made 
   end
 
   # Returns the revenue in dollars
@@ -29,4 +33,9 @@ class BettingMoney
 
     return expense 
   end
+
+  private
+    def convert_to_cents(dollars)
+      return dollars * 100  # there is 100:1 cents to dollars
+    end
 end
